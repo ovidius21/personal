@@ -1,0 +1,214 @@
+<!doctype html>
+<html>
+
+<head>
+
+    <title>Works. OVIDIUS | Multimedia Designer looking for an Internship</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="video production, designer,artist, post production editor, multimedia, brand, 
+			branding, Ovidiu, Cocis, multimedia-design,portfolio, student portfolio, animated infographics, VFX artist, 
+			motion graphics, logo design, animated logo, House of Ovidius, animations, video effects ">
+    <meta name="description" content=" Ovidiu Cocis is a video editor & graphic designer. I combine graphic design vith video editing 
+			to create things such as: animated infographics, motion graphics, short animations, promotional videos & use graphic design skills 
+			to create things such as: business cards, logos, cool facebook profile pics,posters,covers and more.">
+
+    <link type="text/css" rel="stylesheet" href="css/Style.css" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/site.js"></script>
+    <!-- Add fancyBox -->
+    <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+    <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+    <!-- Optionally add helpers - button, thumbnail and/or media -->
+    <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+    <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+    <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+    <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+    <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+    
+    <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,300,200' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <div class="smedia">
+            <ul>
+                <div id="facebook">
+                    <li>
+                        <a href="https://www.facebook.com/ovi.du.3">
+                            <img src="img/grid/facebok-icon.png" width="60px" height="60px"/>
+                        </a>
+                    </li>
+                </div>
+                <div id="twitter">
+                    <li>
+                        <a href="http://www.behance.net/OVDU">
+                             <img src="img/grid/linkedin-icon.png" width="60px" height="60px">
+                        </a>
+                    </li>
+                </div>
+                <div id="you">
+                    <li>
+                        <a href="https://www.youtube.com/user/9mmKK/videos">
+                            <img src="img/grid/youtube-icon.png" width="60px" height="60px" />
+                        </a>
+                    </li>
+                </div>
+
+            </ul>
+        </div>
+
+        <div id="logo">
+            <a href="index.html">
+                <img src="img/grid/logo.png" width="187" height="241" />
+            </a>
+        </div>
+        <div id="lineup"></div>
+        <div id="navigationes">
+            <nav>
+                <ul>
+                    <li class="menuItem"><a href="index.html">About</a>
+                    </li>
+                    <li class="menuItem active"><a href="works.html">Works</a>
+                    </li>
+                    <li class="menuItem"><a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div id="linedown"></div>
+        <div id="contentVideo">
+            <script src="http://www.youtube.com/player_api"></script>
+            <div id="sepiayt">
+                <div id="sepiayt1">
+                    <a class="fancybox fancybox.iframe" href="http://www.youtube.com/embed/lkAQJ1ImKRw?enablejsapi=1&wmode=opaque">
+                        <img src="img/grid/video1.jpg" width="93%" alt="" />
+                    </a>
+                </div>
+                <div id="sepiayt2">
+                    <a class="fancybox fancybox.iframe" href="http://www.youtube.com/embed/o5wKxvq3h-M?enablejsapi=1&wmode=opaque">
+                        <img src="img/grid/video2.jpg" width="93%" alt="" />
+                    </a>
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <div id="allsingle" class="single">
+            <a id="single_1" href="img/grid/p1.jpg" title="Albert Camus - Book Cover">
+                <img src="img/grid/p1_m.jpg" alt="" />
+            </a>
+
+            <a id="single_2" href="img/grid/p2.jpg" title="Me and my friend retuning to Romania - Poster">
+                <img src="img/grid/p2_m.jpg" alt="" />
+            </a>
+
+            <a id="single_3" href="img/grid/p3.jpg" title="New Year - Event Cover">
+                <img src="img/grid/p3_m.jpg" alt="" />
+            </a>
+
+            <a id="single_4" href="img/grid/p5.png" title="The Count - Profile Picture">
+                <img src="img/grid/p5_m.png" alt="" />
+            </a>
+        </div>
+
+
+
+        <div id="footer">
+            <div id="footer5"></div>
+            <div id="footer4"></div>
+            <div id="footer3"></div>
+            <div id="footer2"></div>
+            <div id="footer1">
+                <p>&#169; 2013-2014 HFO Design.</p>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+    <script type="text/javascript">
+    // Fires whenever a player has finished loading
+
+    function onPlayerReady(event) {
+        event.target.playVideo();
+    }
+
+    // Fires when the player's state changes.
+
+    function onPlayerStateChange(event) {
+        // Go to the next video after the current one is finished playing
+        if (event.data === 0) {
+            $.fancybox.next();
+        }
+    }
+
+    // The API will call this function when the page has finished downloading the JavaScript for the player API
+
+    function onYouTubePlayerAPIReady() {
+
+        // Initialise the fancyBox after the DOM is loaded
+        $(document).ready(function() {
+            $(".fancybox")
+                .attr('rel', 'gallery')
+                .fancybox({
+                    openEffect: 'none',
+                    closeEffect: 'none',
+                    nextEffect: 'none',
+                    prevEffect: 'none',
+                    padding: 0,
+                    margin: 50,
+                    beforeShow: function() {
+                        // Find the iframe ID
+                        var id = $.fancybox.inner.find('iframe').attr('id');
+
+                        // Create video player object and add event listeners
+                        var player = new YT.Player(id, {
+                            events: {
+                                'onReady': onPlayerReady,
+                                'onStateChange': onPlayerStateChange
+                            }
+                        });
+                    }
+                });
+        });
+
+    }
+    </script>
+    <script type="text/javascript">
+    $("#single_1").fancybox({
+        tpl: {
+            closeBtn: '<div title="Close" id="myCloseID"></div>'
+        }
+    });
+    </script>
+    <script type="text/javascript">
+    $("#single_2").fancybox({
+        tpl: {
+            closeBtn: '<div title="Close" id="myCloseID"></div>'
+        }
+    });
+    </script>
+    <script type="text/javascript">
+    $("#single_3").fancybox({
+        tpl: {
+            closeBtn: '<div title="Close" id="myCloseID"></div>'
+        }
+    });
+    </script>
+    <script type="text/javascript">
+    $("#single_4").fancybox({
+        tpl: {
+            closeBtn: '<div title="Close" id="myCloseID"></div>'
+        }
+    });
+    </script>
+
+</body>
+
+</html>
