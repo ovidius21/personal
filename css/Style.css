@@ -65,9 +65,7 @@ nav {
 		margin-left:auto;
 		margin-right:auto;
 		margin-bottom: 30px;
-		margin-top:-30px;
-		padding-top:30px;
-		padding-bottom:-30px;
+		position:absolute;
 		background-color:#c77966;}
 		
 .menuItem {
