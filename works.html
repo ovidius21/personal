@@ -97,22 +97,14 @@
         </div>
         <br>
 
-        <div id="allsingle" class="single">
-            <a id="single_1" href="img/grid/p1.jpg" title="Albert Camus - Book Cover">
-                <img src="img/grid/p1_m.jpg" alt="" />
-            </a>
+     <div id="allsingle" class="single">
+           
+            <a rel="gallery" class="fancybox" title="Albert Camus - Book Cover" href="img/grid/p1.jpg"><img src="img/grid/p1_m.jpg" alt=""/></a>
+             <a rel="gallery" class="fancybox" title="Me and my friend retuning to Romania - Poster" href="img/grid/p2.jpg"><img src="img/grid/p2_m.jpg" alt=""/></a>
+              <a rel="gallery" class="fancybox" title="New Year - Event Cover" href="img/grid/p3.jpg"><img src="img/grid/p3_m.jpg" alt=""/></a>
+               <a rel="gallery" class="fancybox" title="The Count - Profile Picture" href="img/grid/p5.png"><img src="img/grid/p5_m.png" alt=""/></a>
 
-            <a id="single_2" href="img/grid/p2.jpg" title="Me and my friend retuning to Romania - Poster">
-                <img src="img/grid/p2_m.jpg" alt="" />
-            </a>
-
-            <a id="single_3" href="img/grid/p3.jpg" title="New Year - Event Cover">
-                <img src="img/grid/p3_m.jpg" alt="" />
-            </a>
-
-            <a id="single_4" href="img/grid/p5.png" title="The Count - Profile Picture">
-                <img src="img/grid/p5_m.png" alt="" />
-            </a>
+          
         </div>
 
 
@@ -180,32 +172,16 @@
 
     }
     </script>
-    <script type="text/javascript">
-    $("#single_1").fancybox({
-        tpl: {
-            closeBtn: '<div title="Close" id="myCloseID"></div>'
-        }
-    });
-    </script>
-    <script type="text/javascript">
-    $("#single_2").fancybox({
-        tpl: {
-            closeBtn: '<div title="Close" id="myCloseID"></div>'
-        }
-    });
-    </script>
-    <script type="text/javascript">
-    $("#single_3").fancybox({
-        tpl: {
-            closeBtn: '<div title="Close" id="myCloseID"></div>'
-        }
-    });
-    </script>
-    <script type="text/javascript">
-    $("#single_4").fancybox({
-        tpl: {
-            closeBtn: '<div title="Close" id="myCloseID"></div>'
-        }
+      <script type="text/javascript">
+    $(".fancybox")
+    .attr('rel', 'gallery')
+    .fancybox({
+        openEffect  : 'none',
+        closeEffect : 'none',
+        nextEffect  : 'none',
+        prevEffect  : 'none',
+        padding     : 0,
+        margin      : [20, 60, 20, 60] // Increase left/right margin
     });
     </script>
 
